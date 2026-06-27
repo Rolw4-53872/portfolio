@@ -1015,7 +1015,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                 <li><a href="mailto:rolwalsulami@gmail.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">rolwalsulami@gmail.com</a></li>
                 <li><a href="https://github.com/Rolw4-53872" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/rola-alsulami-012044306/" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">LinkedIn</a></li>
-                <li><a href="/assets/files/Rola_Alsulami_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'تحميل CV' : 'Download CV'}</a></li>
+                <li><a href="/portfolio/assets/files/Rola_Alsulami_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'تحميل CV' : 'Download CV'}</a></li>
               </ul>
             </div>
           </div>

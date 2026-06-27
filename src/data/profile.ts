@@ -12,7 +12,7 @@ const profile: Profile = {
   email: 'rolwalsulami@gmail.com',
   github: 'https://github.com/Rolw4-53872',
   linkedin: 'https://www.linkedin.com/in/rola-alsulami-012044306/',
-  cvPath: '/assets/files/Rola_Alsulami_CV.pdf',
+  cvPath: '/portfolio/assets/files/Rola_Alsulami_CV.pdf',
 }
 
 export default profile

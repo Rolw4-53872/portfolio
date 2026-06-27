@@ -104,7 +104,7 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <a
-              href="/assets/files/Rola_Alsulami_CV.pdf"
+              href="/portfolio/assets/files/Rola_Alsulami_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
@@ -174,7 +174,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="/assets/files/Rola_Alsulami_CV.pdf"
+                href="/portfolio/assets/files/Rola_Alsulami_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 px-4 py-3 text-sm font-semibold text-white"

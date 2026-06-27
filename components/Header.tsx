@@ -55,7 +55,8 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => {
             const key = item.href.replace('/#', '')
-            const isActive = pathname === '/' ? active === key : pathname.startsWith(item.href.replace('/#', '/'))
+            const currentPath = pathname || '/'
+            const isActive = currentPath === '/' ? active === key : currentPath.startsWith(item.href.replace('/#', '/'))
             return (
               <a key={item.label} href={item.href} className={`text-sm font-medium transition ${isActive ? 'text-cyan-600' : 'text-slate-600 hover:text-slate-900'}`}>
                 {item.label}

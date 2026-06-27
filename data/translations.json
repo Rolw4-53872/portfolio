@@ -1,0 +1,244 @@
+{
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "certificates": "Certificates",
+      "education": "Education",
+      "contact": "Contact"
+    },
+    "hero": {
+      "name": "ROLA ALSULAMI",
+      "tagline": "Transforming data into insights",
+      "downloadCV": "Download CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "contact": "Contact",
+      "stats": {
+        "projects": "Projects",
+        "technologies": "Technologies",
+        "started": "Started"
+      }
+    },
+    "about": {
+      "title": "About Me",
+      "paragraph1": "Data Science student passionate about transforming raw data into valuable insights through analytics, machine learning, and artificial intelligence.",
+      "paragraph2": "Experienced in Python, SQL, Power BI, Machine Learning, Deep Learning, Computer Vision, Data Visualization, and Business Intelligence.",
+      "paragraph3": "Currently completing a Data Science Internship at Dama Holding Company, contributing to real-world AI and analytics projects."
+    },
+    "skills": {
+      "title": "Skills",
+      "categories": {
+        "programming": "Programming",
+        "dataScience": "Data Science",
+        "visualization": "Visualization",
+        "machineLearning": "Machine Learning",
+        "deepLearning": "Deep Learning",
+        "other": "Other"
+      },
+      "items": {
+        "programming": ["Python", "SQL", "JavaScript"],
+        "dataScience": ["Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow"],
+        "visualization": ["Power BI", "Plotly", "Matplotlib", "Seaborn", "Folium"],
+        "machineLearning": ["Regression", "Classification", "Clustering", "Feature Engineering", "Model Evaluation", "Recommendation Systems"],
+        "deepLearning": ["Computer Vision"],
+        "other": ["Git", "GitHub", "Google Colab", "Jupyter Notebook", "Database Design", "ETL"]
+      }
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "company": "Dama Holding Company",
+          "role": "Data Science Intern",
+          "duration": "February 2026 – Present",
+          "description": "Contributing to real-world AI and analytics projects",
+          "status": "Active"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "filters": {
+        "all": "All",
+        "machineLearning": "Machine Learning",
+        "dataAnalysis": "Data Analysis",
+        "dashboard": "Dashboard",
+        "database": "Database"
+      },
+      "search": "Search projects...",
+      "items": [
+        {
+          "title": "Saudi Arabia Domestic Tourism Analysis",
+          "category": "data-analysis",
+          "description": "Comprehensive analysis of Saudi tourism data",
+          "technologies": ["Python", "Pandas", "Matplotlib", "Seaborn"]
+        },
+        {
+          "title": "Flower Recognition Using Deep Learning",
+          "category": "machine-learning",
+          "description": "CNN-based flower classification model",
+          "technologies": ["TensorFlow", "Python", "Computer Vision"]
+        }
+      ]
+    },
+    "certificates": {
+      "title": "Certificates"
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Bachelor of Data Science",
+      "university": "Umm Al-Qura University",
+      "period": "2023 – Present",
+      "gpa": "3.9 / 4.0"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Let's Connect",
+      "description": "Feel free to reach out for collaborations, opportunities, or just a friendly hello!",
+      "info": {
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "address": "Makkah, Saudi Arabia"
+      },
+      "form": {
+        "name": "Full Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "successMessage": "Message sent successfully! Thank you for reaching out.",
+        "errorMessage": "Error sending message. Please try again."
+      }
+    },
+    "footer": {
+      "quickLinks": "Quick Links",
+      "connect": "Connect",
+      "copyright": "Rola Alsulami. All rights reserved."
+    },
+    "loading": "Loading...",
+    "noProjects": "No projects found"
+  },
+  "ar": {
+    "navigation": {
+      "home": "الرئيسية",
+      "about": "عني",
+      "skills": "المهارات",
+      "experience": "الخبرة",
+      "projects": "المشاريع",
+      "certificates": "الشهادات",
+      "education": "التعليم",
+      "contact": "اتصل"
+    },
+    "hero": {
+      "name": "رولا السليمي",
+      "tagline": "تحويل البيانات إلى رؤى",
+      "downloadCV": "تحميل السيرة الذاتية",
+      "github": "جيت هب",
+      "linkedin": "لينك إن",
+      "contact": "اتصل",
+      "stats": {
+        "projects": "مشاريع",
+        "technologies": "تقنيات",
+        "started": "بدأت"
+      }
+    },
+    "about": {
+      "title": "عني",
+      "paragraph1": "طالبة علم بيانات شغوفة بتحويل البيانات الخام إلى رؤى تساعد على اتخاذ القرار من خلال التحليلات والتعلم الآلي والذكاء الاصطناعي.",
+      "paragraph2": "أمتلك خبرة في Python وSQL وPower BI والتعلم الآلي والتعلم العميق ورؤية الحاسب وتصور البيانات وذكاء الأعمال.",
+      "paragraph3": "أكمل حاليًا تدريبي في شركة داما القابضة، حيث أشارك في تطوير مشاريع تحليل البيانات والذكاء الاصطناعي."
+    },
+    "skills": {
+      "title": "المهارات",
+      "categories": {
+        "programming": "البرمجة",
+        "dataScience": "علوم البيانات",
+        "visualization": "التصور البياني",
+        "machineLearning": "التعلم الآلي",
+        "deepLearning": "التعلم العميق",
+        "other": "أخرى"
+      },
+      "items": {
+        "programming": ["Python", "SQL", "JavaScript"],
+        "dataScience": ["Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow"],
+        "visualization": ["Power BI", "Plotly", "Matplotlib", "Seaborn", "Folium"],
+        "machineLearning": ["الانحدار", "التصنيف", "التجميع", "هندسة الميزات", "تقييم النموذج", "أنظمة التوصية"],
+        "deepLearning": ["رؤية الحاسب"],
+        "other": ["Git", "GitHub", "Google Colab", "Jupyter Notebook", "تصميم قواعد البيانات", "ETL"]
+      }
+    },
+    "experience": {
+      "title": "الخبرة",
+      "items": [
+        {
+          "company": "شركة داما القابضة",
+          "role": "متدربة علوم بيانات",
+          "duration": "فبراير 2026 – الآن",
+          "description": "المساهمة في مشاريع الذكاء الاصطناعي والتحليلات الحقيقية",
+          "status": "نشط"
+        }
+      ]
+    },
+    "projects": {
+      "title": "المشاريع",
+      "filters": {
+        "all": "الكل",
+        "machineLearning": "التعلم الآلي",
+        "dataAnalysis": "تحليل البيانات",
+        "dashboard": "لوحة التحكم",
+        "database": "قاعدة البيانات"
+      },
+      "search": "البحث عن المشاريع...",
+      "items": [
+        {
+          "title": "تحليل السياحة الداخلية في السعودية",
+          "category": "data-analysis",
+          "description": "تحليل شامل لبيانات السياحة السعودية",
+          "technologies": ["Python", "Pandas", "Matplotlib", "Seaborn"]
+        }
+      ]
+    },
+    "certificates": {
+      "title": "الشهادات"
+    },
+    "education": {
+      "title": "التعليم",
+      "degree": "بكالوريوس علوم البيانات",
+      "university": "جامعة أم القرى",
+      "period": "2023 – الحالي",
+      "gpa": "3.9 / 4.0"
+    },
+    "contact": {
+      "title": "تواصل معي",
+      "subtitle": "دعنا نتواصل",
+      "description": "لا تتردد في التواصل للتعاون أو المشاريع أو حتى لقول مرحبًا!",
+      "info": {
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "location": "الموقع",
+        "address": "مكة، المملكة العربية السعودية"
+      },
+      "form": {
+        "name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "subject": "الموضوع",
+        "message": "الرسالة",
+        "send": "إرسال الرسالة",
+        "successMessage": "تم إرسال الرسالة بنجاح! شكراً على تواصلك.",
+        "errorMessage": "خطأ في إرسال الرسالة. يرجى المحاولة مرة أخرى."
+      }
+    },
+    "footer": {
+      "quickLinks": "روابط سريعة",
+      "connect": "تواصل",
+      "copyright": "رولا السليمي. جميع الحقوق محفوظة."
+    },
+    "loading": "جاري التحميل...",
+    "noProjects": "لم يتم العثور على مشاريع"
+  }
+}

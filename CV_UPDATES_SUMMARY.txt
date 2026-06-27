@@ -1,0 +1,241 @@
+================================================
+✅ تم تحديث البورتفوليو بمعلومات الـ CV الخاصة بك
+================================================
+
+CV UPDATES COMPLETED
+تم تحديث البيانات التالية من ملف CV:
+
+================================================
+📱 معلومات التواصل
+================================================
+
+✅ البريد الإلكتروني: rolwalsulami@gmail.com
+✅ الهاتف: +966 50 726 8183
+✅ الموقع: Makkah - Jeddah, Saudi Arabia
+✅ GitHub: https://github.com/Rolw4-53872
+✅ LinkedIn: https://www.linkedin.com/in/rola-alsulami-012044306/
+✅ WhatsApp: +966 50 726 8183
+
+================================================
+🎓 البيانات الأكاديمية
+================================================
+
+✅ الجامعة: Umm Al-Qura University
+✅ التخصص: Bachelor of Data Science
+✅ المعدل: 3.9 / 4.0
+✅ الفترة: 2023 - Present
+
+================================================
+💼 الخبرة والتطوع
+================================================
+
+تم إضافة 3 خبرات:
+
+1. Data Science Intern - Dama Holding Company (Feb 2026 - Present)
+   - Real-world AI and analytics projects
+   - Dashboard development
+   - Python, SQL, Power BI
+
+2. Team Leader - Manar Initiative (2024 - Present)
+   - Lead data science sessions
+   - Managed 100+ attendees
+   - Promoted data literacy
+
+3. Organizing Committee - University Club (2023 - Present)
+   - Technical events organization
+   - Leadership development
+   - Team coordination
+
+================================================
+🎯 المشاريع
+================================================
+
+تم تحديث 3 مشاريع أساسية:
+
+1. Student Performance Data Analysis
+   - تحليل بيانات 5000+ طالب
+   - ML Techniques: Regression, Classification, Clustering
+   - GitHub: Rolw4-53872/student-performance-prediction
+
+2. Smart Makeup Identification Using AI
+   - Computer Vision model
+   - Facial feature analysis
+   - Product recommendations
+
+3. Restaurant Management System
+   - Database design
+   - PostgreSQL implementation
+   - ERD and SQL queries
+
++ مشاريع إضافية (Dashboard & Database)
+
+================================================
+📊 المهارات
+================================================
+
+تم تنظيم المهارات إلى 6 فئات:
+
+1. Programming
+   ✓ Python
+   ✓ SQL
+   ✓ JavaScript
+
+2. Data Science & ML
+   ✓ Regression, Classification, Clustering
+   ✓ PCA & Anomaly Detection
+   ✓ Feature Engineering
+
+3. Visualization & BI
+   ✓ Power BI
+   ✓ Tableau
+   ✓ Matplotlib, Seaborn
+
+4. Tools & Platforms
+   ✓ GitHub, Jupyter Notebook
+   ✓ Google Colab, Excel
+   ✓ PostgreSQL, MySQL
+
+5. Soft Skills
+   ✓ Analytical Thinking
+   ✓ Leadership & Teamwork
+   ✓ Problem Solving
+
+6. Other
+   ✓ Database Design, ETL
+   ✓ Data Analysis
+   ✓ Microsoft Office
+
+================================================
+🏆 الشهادات
+================================================
+
+تم إضافة 5 شهادات:
+✓ Data Science Fundamentals
+✓ Machine Learning Specialization
+✓ Power BI Visualization
+✓ Database Design & SQL
+✓ Leadership & Team Management
+
+================================================
+📄 ملف الـ CV
+================================================
+
+✅ ملف CV موجود: assets/files/Rola_Alsulami_CV.pdf
+   - جاهز للتحميل من البورتفوليو
+   - حجم: 70 KB
+
+================================================
+🔄 التحديثات التفصيلية
+================================================
+
+✅ index.html
+   - تحديث معلومات التواصل
+   - تحديث روابط GitHub و LinkedIn و WhatsApp
+   - تحديث قسم About بمعلومات CV
+
+✅ assets/js/main.js
+   - تحديث خبرات العمل (3 خبرات)
+   - تحديث المشاريع (6 مشاريع حقيقية)
+   - تحديث المهارات (6 فئات)
+   - تحديث الشهادات (5 شهادات)
+
+✅ data/translations.json
+   - تحديث GPA (3.9/4.0)
+   - تحديث الفترة الزمنية
+
+✅ assets/files/
+   - إضافة ملف CV الأصلي
+
+================================================
+🎯 ما الذي بقي للتخصيص
+================================================
+
+أنت تحتاج إلى إضافة:
+
+1️⃣ الصور
+   - profile.png (صورتك الشخصية)
+     📍 assets/images/profile.png
+   
+   - banner.png (صورة خلفية)
+     📍 assets/images/banner.png
+   
+   - صور المشاريع
+     📍 assets/images/projects/student-performance.jpg
+     📍 assets/images/projects/makeup-ai.jpg
+     📍 assets/images/projects/restaurant-db.jpg
+     (وبقية صور المشاريع)
+
+2️⃣ روابط GitHub للمشاريع
+   - عدّل assets/js/main.js
+   - غيّر رابط GitHub لكل مشروع
+
+3️⃣ روابط المشاريع الحية (Live Demo)
+   - إضافة روابط البرامج الحية
+
+4️⃣ معلومات إضافية
+   - شهادات إضافية (إذا أردت)
+   - مشاريع إضافية (عند الحاجة)
+
+================================================
+✨ الحالة الحالية
+================================================
+
+✓ معلومات التواصل: كاملة
+✓ البيانات الأكاديمية: كاملة
+✓ الخبرات والتطوع: كاملة
+✓ المشاريع: 6 مشاريع مضافة
+✓ المهارات: منظمة وكاملة
+✓ الشهادات: 5 شهادات مضافة
+✓ ملف CV: مضاف وجاهز
+✗ الصور: تحتاج إلى إضافة
+
+================================================
+🚀 الخطوات التالية
+================================================
+
+1. أضف الصور إلى المجلد:
+   assets/images/
+
+2. اختبر البورتفوليو:
+   - افتح index.html في المتصفح
+   - اختبر جميع الروابط
+   - تحقق من الصور
+
+3. أضف روابط GitHub إذا أردت:
+   - عدّل projects.github في main.js
+
+4. انشر الموقع:
+   - GitHub Pages
+   - Netlify
+   - أي خادم آخر
+
+================================================
+📞 معلومات مهمة
+================================================
+
+الملفات المهمة للتعديل:
+- index.html (المحتوى الأساسي)
+- assets/js/main.js (المشاريع والمهارات)
+- assets/images/ (الصور)
+
+الملفات التي تم تحديثها:
+✓ index.html
+✓ assets/js/main.js
+✓ data/translations.json
+✓ assets/files/Rola_Alsulami_CV.pdf (مضاف)
+
+================================================
+✅ تم الانتهاء!
+================================================
+
+البورتفوليو الآن يحتوي على:
+- معلومات شاملة من CV
+- خبرات حقيقية
+- مشاريع من CV
+- مهارات منظمة
+- شهادات
+- ملف CV جاهز للتحميل
+
+كل ما عليك فعله: أضف الصور وانشر! 🚀
+
+================================================

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F43F5E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" fill="url(#grad4)"/>
+  <g opacity="0.2" fill="white">
+    <circle cx="60" cy="60" r="20"/>
+    <rect x="110" y="40" width="20" height="40"/>
+    <path d="M 200 40 L 230 70 L 200 100 Z"/>
+    <circle cx="260" cy="80" r="15"/>
+  </g>
+  <text x="160" y="130" font-size="20" fill="white" font-weight="bold" text-anchor="middle" font-family="Arial">Dashboard</text>
+  <text x="160" y="160" font-size="12" fill="white" opacity="0.8" text-anchor="middle" font-family="Arial">Power BI Analytics</text>
+</svg>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rola Alsulami | Data Science Portfolio</title>
+  <meta name="description" content="Premium portfolio for Rola Alsulami - Data Science student, data analyst, and machine learning enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-card">
+        <div class="loading-ring"></div>
+        <p>Loading portfolio experience...</p>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">RA</span>
+        <span class="brand-copy">
+          <strong>Rola Alsulami</strong>
+          <small>Data Science Portfolio</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+        <button class="icon-btn" id="language-toggle" type="button">AR</button>
+        <button class="primary-btn" id="admin-open" type="button">Admin</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-eyebrow">Data Science / Machine Learning / AI</p>
+          <h1 id="hero-name">Rola Alsulami</h1>
+          <p class="hero-lede" id="hero-tagline">Transforming data into decisions, models, and human-centered analytics experiences.</p>
+          <div class="hero-pills" id="hero-pills"></div>
+          <div class="hero-actions">
+            <a class="primary-btn" id="hero-cv" href="assets/files/Rola_Alsulami_CV.pdf" download>Download CV</a>
+            <a class="ghost-btn" id="hero-github" href="https://github.com/rola" target="_blank" rel="noopener">GitHub</a>
+            <a class="ghost-btn" id="hero-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="ghost-btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <img id="hero-profile-image" src="assets/images/profile.png" alt="Profile" />
+          <div class="hero-card-body">
+            <span class="status-pill" id="hero-status">Available for internships and analytics projects</span>
+            <div class="hero-stats" id="hero-stats"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <span>01</span>
+          <h2 id="about-title">About</h2>
+          <p id="about-summary">A premium portfolio focused on clarity, impact, and measurable data work.</p>
+        </div>
+        <div class="about-grid">
+          <article class="panel about-panel">
+            <h3 id="about-headline">Data Science student building analytics that make decisions easier.</h3>
+            <div id="about-body"></div>
+          </article>
+          <div class="panel focus-panel" id="focus-panel"></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <span>02</span>
+          <h2 id="skills-title">Skills</h2>
+          <p id="skills-summary">A curated toolkit of technical and analytical expertise, ready for real-world projects.</p>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <span>03</span>
+          <h2 id="projects-title">Projects</h2>
+          <p id="projects-summary">Academic initiatives, internship work, and intelligent systems with professional presentation.</p>
+        </div>
+        <div class="project-controls">
+          <input id="project-search" type="search" placeholder="Search projects..." />
+          <div class="filter-row" id="project-filters"></div>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <span>04</span>
+          <h2 id="experience-title">Experience</h2>
+          <p id="experience-summary">My internship at Dama Holding Company and the real-world impact I contributed.</p>
+        </div>
+        <div class="timeline" id="experience-list"></div>
+      </section>
+
+      <section class="section" id="internship-projects">
+        <div class="section-heading">
+          <span>05</span>
+          <h2 id="internship-title">Internship Projects</h2>
+          <p id="internship-summary">Professional work completed during my internship, presented with discretion and clarity.</p>
+        </div>
+        <div class="projects-grid" id="internship-grid"></div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading">
+          <span>06</span>
+          <h2 id="education-title">Education</h2>
+          <p id="education-summary">Academic foundation that supports my growth as a future data scientist.</p>
+        </div>
+        <div class="education-card panel" id="education-card"></div>
+      </section>
+
+      <section class="section" id="certificates">
+        <div class="section-heading">
+          <span>07</span>
+          <h2 id="certificates-title">Certifications</h2>
+          <p id="certificates-summary">A dedicated space for future milestones and professional certificates.</p>
+        </div>
+        <div class="cert-grid" id="certificates-grid"></div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <span>08</span>
+          <h2 id="contact-title">Contact</h2>
+          <p id="contact-summary">I’m open to internships, analytics projects, and conversations around data-driven impact.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="panel contact-card">
+            <img id="contact-profile-image" src="assets/images/profile.png" alt="Profile" />
+            <h3 id="contact-heading">Let’s connect</h3>
+            <p id="contact-message">Have an opportunity, project, or idea? I’d love to hear from you.</p>
+            <div class="contact-list" id="contact-list"></div>
+          </div>
+          <form class="panel contact-form" id="contact-form">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" required placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required placeholder="Tell me about your idea"></textarea>
+            </label>
+            <button class="primary-btn" type="submit">Prepare Email</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong id="footer-name">Rola Alsulami</strong>
+        <p id="footer-role">Data Science Portfolio</p>
+      </div>
+      <div class="footer-links">
+        <a id="footer-github" href="https://github.com/rola" target="_blank" rel="noopener">GitHub</a>
+        <a id="footer-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="admin-panel" class="admin-panel">
+    <form method="dialog" class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Content Management</p>
+          <h2>Admin Panel</h2>
+        </div>
+        <button class="icon-btn" value="close" type="submit" aria-label="Close admin panel">✕</button>
+      </header>
+      <div class="admin-note">Changes are saved in your browser via local storage and can be exported or imported later.</div>
+      <div class="admin-toolbar">
+        <button class="primary-btn" id="save-admin" type="button">Save</button>
+        <button class="ghost-btn" id="reset-admin" type="button">Reset</button>
+        <button class="ghost-btn" id="export-admin" type="button">Export</button>
+        <label class="ghost-btn admin-import">Import<input id="import-admin" type="file" accept="application/json" /></label>
+      </div>
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab active" data-tab="profile" type="button">Profile</button>
+        <button class="admin-tab" data-tab="projects" type="button">Projects</button>
+        <button class="admin-tab" data-tab="skills" type="button">Skills</button>
+        <button class="admin-tab" data-tab="experience" type="button">Experience</button>
+        <button class="admin-tab" data-tab="contact" type="button">Contact</button>
+      </div>
+      <div class="admin-body" id="admin-body"></div>
+    </form>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

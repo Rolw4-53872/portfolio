@@ -1,11 +1,11 @@
-import type { Education } from '@/src/types'
+﻿import type { Education } from '@/src/types'
 
 const education: Education[] = [
   {
     institution: 'Umm Al-Qura University',
     institutionAr: 'جامعة أم القرى',
-    degree: 'Bachelor of Data Science',
-    degreeAr: 'بكالوريوس علم البيانات',
+    degree: 'Bachelor of Data Science — GPA 3.9 / 4.0',
+    degreeAr: 'بكالوريوس علم البيانات — المعدل 3.9 / 4.0',
     from: '2023',
     to: '2027',
     description:

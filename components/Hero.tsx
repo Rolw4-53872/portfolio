@@ -1,12 +1,25 @@
  'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const Hero: React.FC = () => {
+  const [banner, setBanner] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch('/api/data/profile')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.banner) setBanner(data.banner)
+      })
+      .catch(() => {})
+  }, [])
+
+  const bgStyle = banner ? { backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center center' } : undefined
+
   return (
     <section className="mt-6">
-      <div className="hero-bg rounded-xl overflow-hidden shadow-lg">
+      <div className="hero-bg rounded-xl overflow-hidden shadow-lg" style={bgStyle}>
         <div className="hero-overlay" />
         <div className="container mx-auto px-6 py-20 hero-content">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

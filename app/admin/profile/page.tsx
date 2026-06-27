@@ -131,6 +131,20 @@ export default function AdminProfile() {
             {profile.cv && <div className="mt-2 text-sm text-slate-600">CV uploaded</div>}
           </div>
         </div>
+        
+        <div className="mt-4">
+          <label>Upload Banner (large image)</label>
+          <div className="mt-2">
+            <input type="file" accept="image/*" onChange={(e) => {
+              const file = e.target.files?.[0]
+              if (!file) return
+              const reader = new FileReader()
+              reader.onload = () => setProfile({ ...profile, banner: reader.result })
+              reader.readAsDataURL(file)
+            }} />
+            {profile.banner && <div className="mt-2 text-sm text-slate-600">Banner uploaded</div>}
+          </div>
+        </div>
       </div>
 
       <div className="mt-6 flex gap-3">

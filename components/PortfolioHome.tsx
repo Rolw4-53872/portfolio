@@ -141,10 +141,20 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                 </motion.div>
               </div>
 
+              <div className="mb-4">
+                <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300 font-medium mb-1">
+                  <GraduationCap size={16} className="text-cyan-500" />
+                  <span>{isAr ? 'طالبة علم بيانات — جامعة أم القرى' : 'Data Science Student at Umm Al-Qura University'}</span>
+                </div>
+                <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300 font-medium">
+                  <Briefcase size={16} className="text-violet-500" />
+                  <span>{isAr ? 'متدربة علم بيانات — شركة داما القابضة' : 'Data Science Intern at Dama Holding Company'}</span>
+                </div>
+              </div>
               <p className="max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400 mb-8">
                 {isAr
-                  ? 'تحويل البيانات إلى رؤى قابلة للتنفيذ من خلال التحليل والتعلم الآلي والحلول الذكية.'
-                  : 'Transforming data into actionable insights through analytics, machine learning, and intelligent solutions.'}
+                  ? 'بناء حلول بيانات ذكية تحوّل البيانات الخام إلى قيمة أعمال حقيقية.'
+                  : 'Building Intelligent Data Solutions That Turn Raw Data into Business Value.'}
               </p>
 
               {/* Tech tags */}
@@ -159,7 +169,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
               {/* CTA buttons */}
               <div className="flex flex-wrap gap-3 mb-12">
                 <a
-                  href="/assets/files/cv.pdf"
+                  href={profile.cvPath}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-6 py-3 font-semibold text-white shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:-translate-y-0.5 transition-all"
@@ -167,7 +177,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                   <Download size={16} /> {isAr ? 'تحميل السيرة الذاتية' : 'Download CV'}
                 </a>
                 <a
-                  href="https://github.com"
+                  href={profile.github}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-6 py-3 font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:-translate-y-0.5 transition-all"
@@ -175,7 +185,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                   <Github size={16} /> GitHub
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={profile.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-6 py-3 font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:-translate-y-0.5 transition-all"
@@ -400,6 +410,62 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
         </div>
       </section>
 
+      {/* ─── FEATURED PROJECTS ─── */}
+      <section id="featured" className="bg-slate-50/80 dark:bg-slate-900/40 py-24">
+        <div className="container mx-auto px-4 lg:px-6">
+          <motion.div {...fadeUp()} className="mb-12 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.35em] text-cyan-600 dark:text-cyan-400 mb-3">{isAr ? 'المشاريع المميزة' : 'Featured Projects'}</p>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">{isAr ? 'أبرز المشاريع' : 'Featured Projects'}</h2>
+            <p className="mt-3 max-w-2xl mx-auto text-slate-600 dark:text-slate-400">{isAr ? 'أبرز المشاريع الأكاديمية التي أعكس من خلالها مهاراتي التقنية.' : 'Highlighted academic projects showcasing my technical skills and analytical capabilities.'}</p>
+          </motion.div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {projects.map((project: any, index: number) => {
+              const colors = ['from-cyan-500 to-sky-600', 'from-fuchsia-500 to-violet-600', 'from-emerald-500 to-teal-600']
+              const grad = colors[index] || colors[0]
+              return (
+                <motion.div
+                  key={project.title}
+                  {...fadeUp(index * 0.07)}
+                  whileHover={{ y: -8 }}
+                  className="group rounded-[2rem] border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/60 overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                >
+                  <div className={`h-2 w-full bg-gradient-to-r ${grad}`} />
+                  <div className="p-6">
+                    <div className={`inline-flex rounded-xl bg-gradient-to-br ${grad} p-3 text-white shadow-lg mb-4`}>
+                      {index === 0 ? <TrendingUp size={20} /> : index === 1 ? <Brain size={20} /> : <Target size={20} />}
+                    </div>
+                    <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">{isAr ? 'أكاديمي' : 'Academic'} · {project.year}</span>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white mt-2 mb-3 leading-tight line-clamp-2">
+                      {isAr ? project.titleAr : project.title}
+                    </h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3">
+                      {isAr ? project.descriptionAr : project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5 mb-5">
+                      {project.technologies.slice(0, 4).map((tech: string) => (
+                        <span key={tech} className="rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2 py-0.5 text-xs text-slate-600 dark:text-slate-400">{tech}</span>
+                      ))}
+                      {project.technologies.length > 4 && <span className="text-xs text-slate-400">+{project.technologies.length - 4}</span>}
+                    </div>
+                    <div className="flex gap-2">
+                      <a href={`/projects/${project.slug}/`} className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r ${grad} px-4 py-2.5 text-sm font-semibold text-white hover:-translate-y-0.5 transition-transform`}>
+                        <ExternalLink size={14} /> {isAr ? 'التفاصيل' : 'View Details'}
+                      </a>
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noreferrer" className="rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-2.5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:-translate-y-0.5 transition-all">
+                          <Github size={16} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* ─── ACADEMIC PROJECTS ─── */}
       <section id="projects" className="container mx-auto px-4 lg:px-6 py-24">
         <motion.div {...fadeUp()} className="mb-12">
@@ -462,7 +528,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                       ))}
                     </div>
 
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 flex-wrap">
                       {project.github ? (
                         <a
                           href={project.github}
@@ -476,6 +542,14 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
                         <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-5 py-2.5 text-sm font-medium text-slate-500 dark:text-slate-400 cursor-not-allowed">
                           <Github size={15} /> {isAr ? 'قريباً' : 'GitHub Soon'}
                         </span>
+                      )}
+                      {project.slug && (
+                        <a
+                          href={`/projects/${project.slug}/`}
+                          className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:-translate-y-0.5 transition-all"
+                        >
+                          <ExternalLink size={15} /> {isAr ? 'تفاصيل المشروع' : 'View Details'}
+                        </a>
                       )}
                     </div>
                   </div>
@@ -723,6 +797,83 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
         </div>
       </section>
 
+      {/* ─── TECHNICAL INTERESTS ─── */}
+      <section id="interests" className="container mx-auto px-4 lg:px-6 py-24">
+        <motion.div {...fadeUp()} className="mb-12">
+          <p className="text-xs font-bold uppercase tracking-[0.35em] text-indigo-600 dark:text-indigo-400 mb-3">{isAr ? 'الاهتمامات التقنية' : 'Technical Interests'}</p>
+          <h2 className="mt-3 text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">
+            {isAr ? 'اهتمامات البحث والتطوير التقني.' : 'Research & Technical Interests.'}
+          </h2>
+        </motion.div>
+        <div className="flex flex-wrap gap-3">
+          {(isAr ? [
+            'تعلم الآلة', 'التعلم العميق', 'الذكاء الاصطناعي', 'ذكاء الأعمال',
+            'أنظمة التوصية', 'رؤية الحاسوب', 'تصور البيانات', 'التحليل التنبؤي',
+            'هندسة البيانات', 'نماذج اللغة الكبيرة (LLMs)'
+          ] : [
+            'Machine Learning', 'Deep Learning', 'Artificial Intelligence', 'Business Intelligence',
+            'Recommendation Systems', 'Computer Vision', 'Data Visualization', 'Predictive Analytics',
+            'Data Engineering', 'Large Language Models (LLMs)'
+          ]).map((interest, i) => (
+            <motion.span
+              key={interest}
+              {...fadeUp(i * 0.04)}
+              whileHover={{ scale: 1.05, y: -2 }}
+              className="rounded-full border border-indigo-200 dark:border-indigo-700/50 bg-indigo-50 dark:bg-indigo-900/20 px-5 py-2 text-sm font-medium text-indigo-700 dark:text-indigo-300 cursor-default"
+            >
+              {interest}
+            </motion.span>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── CURRENT FOCUS ─── */}
+      <section id="current-focus" className="bg-slate-50/80 dark:bg-slate-900/40 py-24">
+        <div className="container mx-auto px-4 lg:px-6">
+          <motion.div {...fadeUp()} className="mb-12">
+            <p className="text-xs font-bold uppercase tracking-[0.35em] text-emerald-600 dark:text-emerald-400 mb-3">{isAr ? 'التركيز الحالي' : 'Current Focus'}</p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">
+              {isAr ? 'ما أعمل عليه الآن.' : 'Currently Working On.'}
+            </h2>
+          </motion.div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {([
+              { title: isAr ? 'نظام التوصية' : 'Recommendation System', status: isAr ? 'قيد التطوير' : 'In Progress', color: 'amber', icon: <Brain size={18} /> },
+              { title: isAr ? 'تطبيقات الذكاء الاصطناعي' : 'AI Applications', status: isAr ? 'نشط' : 'Active', color: 'cyan', icon: <Cpu size={18} /> },
+              { title: isAr ? 'لوحات ذكاء الأعمال' : 'BI Dashboards', status: isAr ? 'نشط' : 'Active', color: 'emerald', icon: <BarChart3 size={18} /> },
+              { title: isAr ? 'تحليل البيانات' : 'Data Analytics', status: isAr ? 'نشط' : 'Active', color: 'violet', icon: <TrendingUp size={18} /> },
+              { title: isAr ? 'تعلم الآلة' : 'Machine Learning', status: isAr ? 'نشط' : 'Active', color: 'rose', icon: <Target size={18} /> },
+            ] as { title: string; status: string; color: string; icon: React.ReactNode }[]).map(({ title, status, color, icon }, i) => {
+              const colorMap: Record<string, { bg: string; text: string; border: string; dot: string }> = {
+                amber: { bg: 'bg-amber-50 dark:bg-amber-900/20', text: 'text-amber-600 dark:text-amber-400', border: 'border-amber-100 dark:border-amber-800/30', dot: 'bg-amber-500' },
+                cyan: { bg: 'bg-cyan-50 dark:bg-cyan-900/20', text: 'text-cyan-600 dark:text-cyan-400', border: 'border-cyan-100 dark:border-cyan-800/30', dot: 'bg-cyan-500' },
+                emerald: { bg: 'bg-emerald-50 dark:bg-emerald-900/20', text: 'text-emerald-600 dark:text-emerald-400', border: 'border-emerald-100 dark:border-emerald-800/30', dot: 'bg-emerald-500' },
+                violet: { bg: 'bg-violet-50 dark:bg-violet-900/20', text: 'text-violet-600 dark:text-violet-400', border: 'border-violet-100 dark:border-violet-800/30', dot: 'bg-violet-500' },
+                rose: { bg: 'bg-rose-50 dark:bg-rose-900/20', text: 'text-rose-600 dark:text-rose-400', border: 'border-rose-100 dark:border-rose-800/30', dot: 'bg-rose-500' },
+              }
+              const c = colorMap[color]
+              return (
+                <motion.div
+                  key={title}
+                  {...fadeUp(i * 0.06)}
+                  whileHover={{ y: -5 }}
+                  className="rounded-[1.5rem] border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/60 p-6 shadow-md"
+                >
+                  <div className={`inline-flex rounded-xl ${c.bg} border ${c.border} p-3 ${c.text} mb-4`}>
+                    {icon}
+                  </div>
+                  <h3 className="font-bold text-slate-900 dark:text-white mb-2">{title}</h3>
+                  <div className="flex items-center gap-2">
+                    <div className={`h-2 w-2 rounded-full ${c.dot} ${status.includes('Progress') || status.includes('قيد') ? 'animate-pulse' : ''}`} />
+                    <span className={`text-xs font-semibold ${c.text}`}>{status}</span>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CONTACT ─── */}
       <section id="contact" className="container mx-auto px-4 lg:px-6 py-24">
         <motion.div {...fadeUp()} className="mb-12">
@@ -820,44 +971,58 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
       </section>
 
       {/* ─── FOOTER ─── */}
-      <footer className="container mx-auto px-4 lg:px-6 pb-8">
-        <div className="rounded-[2rem] border border-slate-200 dark:border-slate-700/50 bg-white/80 dark:bg-slate-900/60 p-8 shadow-xl shadow-slate-200/50 dark:shadow-slate-900/40 backdrop-blur">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between mb-6">
-            <div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white">ROLA ALSULAMI</h3>
-              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                {isAr
-                  ? 'علم البيانات • التحليل • تعلم الآلة • ذكاء الأعمال'
-                  : 'Data Science • Analytics • Machine Learning • Business Intelligence'}
+      <footer className="container mx-auto px-4 lg:px-6 pb-8 pt-8">
+        <div className="rounded-[2rem] border border-slate-200 dark:border-slate-700/50 bg-white/80 dark:bg-slate-900/60 p-8 shadow-xl backdrop-blur">
+          <div className="grid gap-8 mb-8 lg:grid-cols-4">
+            {/* Brand */}
+            <div className="lg:col-span-1">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">ROLA ALSULAMI</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                {isAr ? 'علم البيانات • التحليل • تعلم الآلة • ذكاء الأعمال' : 'Data Science • Analytics • ML • BI'}
               </p>
+              <div className="flex gap-2">
+                <a href="https://github.com/Rolw4-53872" target="_blank" rel="noreferrer" className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><Github size={15} /></a>
+                <a href="https://www.linkedin.com/in/rola-alsulami-012044306/" target="_blank" rel="noreferrer" className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><Linkedin size={15} /></a>
+                <a href="mailto:rolwalsulami@gmail.com" className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><Mail size={15} /></a>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3 text-sm font-medium">
-              {(isAr
-                ? [['#home','الرئيسية'],['#about','عني'],['#skills','المهارات'],['#projects','المشاريع'],['#internships','التدريب'],['#contact','التواصل']]
-                : [['#home','Home'],['#about','About'],['#skills','Skills'],['#projects','Projects'],['#internships','Internship'],['#contact','Contact']]
-              ).map(([href, label]) => (
-                <a key={href} href={href} className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{label}</a>
-              ))}
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-3">{isAr ? 'روابط سريعة' : 'Quick Links'}</h4>
+              <ul className="space-y-2 text-sm">
+                {(isAr
+                  ? [['#home','الرئيسية'],['#about','عني'],['#skills','المهارات'],['#featured','المشاريع المميزة'],['#experience','الخبرة'],['#education','التعليم'],['#contact','التواصل']]
+                  : [['#home','Home'],['#about','About'],['#skills','Skills'],['#featured','Featured Projects'],['#experience','Experience'],['#education','Education'],['#contact','Contact']]
+                ).map(([href, label]) => (
+                  <li key={href}><a href={href} className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{label}</a></li>
+                ))}
+              </ul>
+            </div>
+            {/* Projects */}
+            <div>
+              <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-3">{isAr ? 'المشاريع' : 'Projects'}</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/projects/saudi-tourism/" className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'السياحة الداخلية السعودية' : 'Saudi Tourism Analysis'}</a></li>
+                <li><a href="/projects/flower-recognition/" className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'التعرف على الزهور' : 'Flower Recognition'}</a></li>
+                <li><a href="/projects/student-performance/" className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'الأداء الأكاديمي' : 'Student Performance'}</a></li>
+                <li><a href="/resume/" className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'السيرة الذاتية' : 'Resume'}</a></li>
+              </ul>
+            </div>
+            {/* Contact */}
+            <div>
+              <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-3">{isAr ? 'التواصل' : 'Contact'}</h4>
+              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                <li><a href="mailto:rolwalsulami@gmail.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">rolwalsulami@gmail.com</a></li>
+                <li><a href="https://github.com/Rolw4-53872" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/rola-alsulami-012044306/" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">LinkedIn</a></li>
+                <li><a href="/assets/files/Rola_Alsulami_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{isAr ? 'تحميل CV' : 'Download CV'}</a></li>
+              </ul>
             </div>
           </div>
 
           <div className="flex flex-col gap-4 border-t border-slate-200 dark:border-slate-700/50 pt-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center gap-3">
-              <a href={contact?.github || 'https://github.com'} target="_blank" rel="noreferrer" className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                <Github size={15} />
-              </a>
-              <a href={contact?.linkedin || 'https://linkedin.com'} target="_blank" rel="noreferrer" className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                <Linkedin size={15} />
-              </a>
-              <a href={`mailto:${contact?.email || ''}`} className="rounded-full border border-slate-200 dark:border-slate-700 p-2 text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                <Mail size={15} />
-              </a>
-            </div>
             <p className="text-xs text-slate-500 dark:text-slate-500">© 2026 Rola Alsulami. {isAr ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}</p>
-            <a
-              href="#home"
-              className="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
-            >
+            <a href="#home" className="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
               {isAr ? 'للأعلى' : 'Back to Top'} <ChevronUp size={14} />
             </a>
           </div>

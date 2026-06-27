@@ -13,7 +13,8 @@ const navItemsEn = [
   { href: '#projects', label: 'Projects' },
   { href: '#internships', label: 'Internship' },
   { href: '#experience', label: 'Experience' },
-  { href: '#contact', label: 'Contact' }
+  { href: '#contact', label: 'Contact' },
+  { href: '/resume/', label: 'Resume' }
 ]
 
 const navItemsAr = [
@@ -23,7 +24,8 @@ const navItemsAr = [
   { href: '#projects', label: 'المشاريع' },
   { href: '#internships', label: 'التدريب' },
   { href: '#experience', label: 'الخبرة' },
-  { href: '#contact', label: 'التواصل' }
+  { href: '#contact', label: 'التواصل' },
+  { href: '/resume/', label: 'السيرة الذاتية' }
 ]
 
 export default function Header() {
@@ -102,7 +104,7 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <a
-              href="/assets/files/cv.pdf"
+              href="/assets/files/Rola_Alsulami_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
@@ -110,7 +112,7 @@ export default function Header() {
               <Download size={12} /> CV
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Rolw4-53872"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -119,7 +121,7 @@ export default function Header() {
               <Github size={15} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rola-alsulami-012044306/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -172,7 +174,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="/assets/files/cv.pdf"
+                href="/assets/files/Rola_Alsulami_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 px-4 py-3 text-sm font-semibold text-white"

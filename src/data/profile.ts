@@ -10,9 +10,9 @@ const profile: Profile = {
   location: 'Makkah, Saudi Arabia',
   locationAr: 'مكة المكرمة، المملكة العربية السعودية',
   email: 'rolwalsulami@gmail.com',
-  github: 'https://github.com/rolw4-53872',
-  linkedin: 'https://linkedin.com/in/rola-alsulami',
-  cvPath: '/assets/files/cv.pdf',
+  github: 'https://github.com/Rolw4-53872',
+  linkedin: 'https://www.linkedin.com/in/rola-alsulami-012044306/',
+  cvPath: '/assets/files/Rola_Alsulami_CV.pdf',
 }
 
 export default profile

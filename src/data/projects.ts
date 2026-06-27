@@ -21,8 +21,9 @@ const projects: Project[] = [
       'Produced a polished, publication-ready analytics report with interactive geographic maps and trend charts highlighting key tourism patterns across all regions.',
     resultsAr:
       'تقرير تحليلي احترافي جاهز للنشر مع خرائط جغرافية تفاعلية ومخططات اتجاهات تبرز أنماط السياحة الرئيسية.',
-    github: '',
+    github: 'https://github.com/Rolw4-53872/saudi-domestic-tourism-visualization',
     year: '2024',
+    slug: 'saudi-tourism',
   },
   {
     title: 'Flower Recognition Using Deep Learning (ResNet-18 vs Custom CNN)',
@@ -44,8 +45,9 @@ const projects: Project[] = [
       'ResNet-18 with Transfer Learning achieved 93.76% test accuracy, significantly outperforming the custom CNN (78.4%).',
     resultsAr:
       'حقق ResNet-18 مع التعلم الانتقالي دقة 93.76% في الاختبار، متفوقاً بشكل كبير على CNN المخصص (78.4%).',
-    github: '',
+    github: 'https://github.com/Rolw4-53872/flower-recognition-cnn-resnet',
     year: '2024',
+    slug: 'flower-recognition',
   },
   {
     title: 'Predicting Student Academic Performance Using Machine Learning',
@@ -67,8 +69,9 @@ const projects: Project[] = [
       'Random Forest classifier outperformed baselines. Clustering revealed 3 distinct student performance profiles with actionable insights.',
     resultsAr:
       'تفوق مصنف الغابة العشوائية على الخطوط الأساسية. كشف التجميع عن 3 ملفات أداء مميزة للطلاب مع رؤى قابلة للتنفيذ.',
-    github: '',
+    github: 'https://github.com/Rolw4-53872/student-performance-prediction',
     year: '2025',
+    slug: 'student-performance',
   },
 ]
 

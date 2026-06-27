@@ -27,6 +27,7 @@ export interface Project {
   resultsAr: string
   github: string
   year: string
+  slug?: string
 }
 
 export interface InternshipProject {

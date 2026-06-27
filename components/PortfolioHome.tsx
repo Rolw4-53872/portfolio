@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, BarChart3, Brain, BriefcaseBusiness, CalendarDays, Cpu, ExternalLink, GraduationCap, Mail, MapPin, MessageSquareMore, Phone, Sparkles, TrendingUp, Database, LayoutGrid, BadgeCheck, Github, Linkedin, BookOpen, Compass, Layers3 } from 'lucide-react'
+import { ArrowRight, BarChart3, Brain, Briefcase, CalendarDays, Cpu, ExternalLink, GraduationCap, Mail, MapPin, MessageSquare, Phone, Sparkles, TrendingUp, Database, LayoutGrid, BadgeCheck, Github, Linkedin, Compass, Layers } from 'lucide-react'
 import ProjectCard from './ProjectCard'
 
 type Props = {
@@ -19,12 +19,12 @@ type Props = {
 const categoryMeta: Record<string, { icon: React.ReactNode; accent: string }> = {
   programming: { icon: <Cpu size={18} />, accent: 'from-cyan-500 to-blue-600' },
   machine_learning: { icon: <Brain size={18} />, accent: 'from-fuchsia-500 to-violet-600' },
-  deep_learning: { icon: <Layers3 size={18} />, accent: 'from-amber-500 to-orange-600' },
+  deep_learning: { icon: <Layers size={18} />, accent: 'from-amber-500 to-orange-600' },
   business_intelligence: { icon: <BarChart3 size={18} />, accent: 'from-emerald-500 to-teal-600' },
   visualization: { icon: <TrendingUp size={18} />, accent: 'from-rose-500 to-pink-600' },
   database: { icon: <Database size={18} />, accent: 'from-indigo-500 to-sky-600' },
   tools: { icon: <LayoutGrid size={18} />, accent: 'from-slate-600 to-slate-800' },
-  soft_skills: { icon: <MessageSquareMore size={18} />, accent: 'from-violet-500 to-purple-600' }
+  soft_skills: { icon: <MessageSquare size={18} />, accent: 'from-violet-500 to-purple-600' }
 }
 
 function Counter({ value, suffix = '' }: { value: number; suffix?: string }) {
@@ -122,7 +122,7 @@ export default function PortfolioHome({ profile, projects, skills, experience, e
 
                 <div className="mt-6 space-y-3 text-sm text-slate-300">
                   <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3">
-                    <BriefcaseBusiness size={16} className="text-cyan-300" />
+                    <Briefcase size={16} className="text-cyan-300" />
                     <span>{profile?.internship?.position || 'Data Science Intern'} @ {profile?.internship?.company || 'Dama Holding Company'}</span>
                   </div>
                   <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3">

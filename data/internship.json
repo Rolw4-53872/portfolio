@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Executive Performance Dashboard",
+    "status": "Completed",
+    "description": "Designed and developed an interactive executive dashboard to monitor KPIs and organizational performance.",
+    "technologies": ["Power BI","SQL","Python","Pandas","Business Intelligence","Data Visualization"]
+  },
+  {
+    "name": "Hajj Analytics Dashboard",
+    "status": "Completed",
+    "description": "Developed an interactive analytics dashboard for Hajj operations that visualizes KPIs and supports data-driven planning.",
+    "technologies": ["Power BI","SQL","Python","Dashboard Development","Data Analysis"]
+  },
+  {
+    "name": "Database Design & Development",
+    "status": "Completed",
+    "description": "Designed and implemented a relational database with optimized tables and relationships to support dashboards and reporting systems.",
+    "technologies": ["SQL","Database Design","Database Development","Data Modeling","Relational Databases"]
+  },
+  {
+    "name": "Recommendation System",
+    "status": "In Progress",
+    "description": "Currently developing an intelligent recommendation system using machine learning techniques to provide personalized recommendations.",
+    "technologies": ["Python","Machine Learning","Recommendation Systems","Data Analysis","Artificial Intelligence"]
+  }
+]

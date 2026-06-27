@@ -1,0 +1,18 @@
+{
+  "name": "Rola Alsulami",
+  "title": "Data Science Student",
+  "location": "Makkah, Saudi Arabia",
+  "internship": {
+    "company": "Dama Holding Company",
+    "position": "Data Science Intern",
+    "from": "2026-02-01",
+    "to": "Present",
+    "description": "Working on real-world data analytics and business intelligence projects."
+  },
+  "languages": ["en", "ar"],
+  "social": {
+    "github": "",
+    "linkedin": "",
+    "email": ""
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Saudi Arabia Domestic Tourism Analysis & Visualization (2018–2023)",
+    "description": "Comprehensive analysis and visualization of Saudi Arabia's domestic tourism using Python and interactive visualizations.",
+    "technologies": ["Python","Pandas","Plotly","Matplotlib","Seaborn","Folium","Google Colab"],
+    "github": "",
+    "type": "academic",
+    "image": ""
+  },
+  {
+    "title": "Flower Recognition Using Deep Learning",
+    "description": "Compared Transfer Learning with ResNet-18 against custom CNN architectures for flower recognition. Best accuracy 93.76%.",
+    "technologies": ["PyTorch","Torchvision","CNN","ResNet-18","Scikit-learn"],
+    "github": "",
+    "type": "academic",
+    "image": ""
+  },
+  {
+    "title": "Predicting Student Academic Performance Using Machine Learning",
+    "description": "End-to-end ML project using regression, classification, clustering, and anomaly detection.",
+    "technologies": ["Python","Pandas","Scikit-learn","Matplotlib","Seaborn"],
+    "github": "",
+    "type": "academic",
+    "image": ""
+  }
+]

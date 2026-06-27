@@ -1,0 +1,12 @@
+/** @type {import('prettier').Config} */
+const config = {
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'es5',
+  printWidth: 110,
+  tabWidth: 2,
+  arrowParens: 'always',
+  endOfLine: 'lf',
+}
+
+export default config

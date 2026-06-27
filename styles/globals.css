@@ -13,6 +13,12 @@ body {
   color: #1e293b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #020617;
+  color: #e2e8f0;
 }
 
 ::selection {
@@ -20,30 +26,113 @@ body {
   color: #0f172a;
 }
 
+.dark ::selection {
+  background: rgba(139, 92, 246, 0.4);
+  color: #f1f5f9;
+}
+
+/* Glassmorphism */
 .glass {
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .dark .glass {
   background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-soft {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
-.hero-title {
-  font-size: 2.25rem;
-  line-height: 1;
+.dark .glass-soft {
+  background: rgba(15, 23, 42, 0.5);
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3.25rem;
-  }
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #06b6d4, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+/* Animated gradient border */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(135deg, #06b6d4, #6366f1) border-box;
+  border: 1.5px solid transparent;
+}
+
+.dark .gradient-border {
+  background: linear-gradient(#0f172a, #0f172a) padding-box,
+              linear-gradient(135deg, #06b6d4, #6366f1) border-box;
+}
+
+/* Skill card hover glow */
+.skill-card:hover {
+  box-shadow: 0 0 32px rgba(99, 102, 241, 0.18);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Section spacing */
+section {
+  position: relative;
+}
+
+/* Animated typing cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Scroll indicator */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Dark mode card backgrounds */
+.dark .card-bg {
+  background: #0f172a;
+  border-color: rgba(255,255,255,0.07);
+}
+
+/* Particle/ambient orb blur animation */
+@keyframes float-orb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -15px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.97); }
+}
+.orb {
+  animation: float-orb 12s ease-in-out infinite;
+}

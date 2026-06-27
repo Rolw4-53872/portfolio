@@ -1,68 +1,187 @@
-# Rola Alsulami — Portfolio (Starter)
+# Rola Alsulami — Data Science Portfolio
 
-This repository is a starter scaffold for a premium portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It includes JSON-based data files and a minimal admin-write API to manage content without editing source code.
+A premium, bilingual (Arabic/English) Data Science portfolio built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Features dark/light mode, RTL/LTR support, smooth animations, and a fully static architecture — no backend, no database.
 
-## Quick start
+---
 
-Install dependencies:
+## Features
 
-```bash
-npm install
+- **Bilingual** — Full Arabic (RTL) and English (LTR) support with seamless switching
+- **Dark / Light Mode** — Persisted across sessions via localStorage
+- **Premium Design** — Glassmorphism, gradient cards, floating orbs, animated counters
+- **Fully Static** — All content lives in TypeScript data files; no backend, no database, no CMS
+- **Responsive** — Mobile-first design tested across phones, tablets, and desktops
+- **Accessible** — Semantic HTML, ARIA labels, keyboard navigation
+- **SEO Ready** — Rich metadata, Open Graph, clean URLs
+- **Deployment Ready** — Works on Vercel, Netlify, and GitHub Pages out of the box
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v3 |
+| Animations | Framer Motion v12 |
+| Icons | Lucide React |
+| Fonts | Inter (Google Fonts) |
+| Deployment | Vercel / Netlify / GitHub Pages |
+
+---
+
+## Project Structure
+
+```
+portfolio/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx          # Root layout, metadata, dark mode
+│   └── page.tsx            # Home page (imports data + renders sections)
+├── components/             # Shared React components
+│   ├── Header.tsx          # Navigation, theme toggle, language switcher
+│   ├── PortfolioHome.tsx   # All portfolio sections
+│   └── Providers.tsx       # React Context for lang/theme
+├── src/
+│   ├── data/               # ← Edit your content here
+│   │   ├── profile.ts      # Name, bio, social links, CV path
+│   │   ├── projects.ts     # Academic projects with challenges & results
+│   │   ├── internshipProjects.ts  # Internship work (confidential)
+│   │   ├── skills.ts       # Skills grouped by category
+│   │   ├── experience.ts   # Work experience
+│   │   ├── education.ts    # Education & coursework
+│   │   ├── volunteer.ts    # Volunteer experience
+│   │   ├── languages.ts    # Language proficiency levels
+│   │   └── contact.ts      # Contact information
+│   ├── types/
+│   │   └── index.ts        # TypeScript interfaces for all data
+│   ├── hooks/
+│   │   └── useCountUp.ts   # Animated number counter hook
+│   └── utils/
+│       └── cn.ts           # Class name utility
+├── styles/
+│   └── globals.css         # Global styles, dark mode, orb animations
+├── public/
+│   └── assets/
+│       └── files/
+│           └── cv.pdf      # ← Upload your CV here
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.js
+├── eslint.config.js
+├── prettier.config.js
+└── README.md
 ```
 
-Run development server:
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/rolw4-53872/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-API endpoints (read):
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- `GET /api/data/profile`
-- `GET /api/data/projects`
-- `GET /api/data/internship`
-- `GET /api/data/skills`
-- `GET /api/data/experience`
-- `GET /api/data/contact`
+---
 
-To update content from the admin UI (or programmatically), send a `POST` with a JSON body to the same endpoints (server must have write permissions).
+## Editing Your Content
 
-## Next steps
-
-
-## Admin token (حماية واجهات الـ API)
-
-## Adding your banner image
-
-To use a custom banner like the example you provided, add the image file to:
-
-```
-assets/images/banner.jpg
-```
-
-The `Hero` component uses `/assets/images/banner.jpg` as the background. The Admin pages also allow uploading images (stored as data URLs in JSON) but for the main banner place the file at the path above so it loads server-side.
-
-
-هذا المشروع يستخدم متغير بيئة بسيط اسمه `ADMIN_TOKEN` لحماية عمليات الكتابة (`POST`) على نقاط الـ API في `pages/api/data/[name]`.
-
-- القيمة الافتراضية (للتطوير) هي: `rola-admin` — غيريها دائمًا قبل النشر.
-- عند إرسال طلب `POST` إلى مثلاً `/api/data/projects` يجب تضمين رأس HTTP باسم `x-admin-token` بقيمة `ADMIN_TOKEN`.
-
-إعداد محلي (ملف `.env.local` في جذر المشروع):
+All portfolio content is in `src/data/`. Each file is a typed TypeScript module — just update the values:
 
 ```bash
-ADMIN_TOKEN=your-secret-token-here
+src/data/profile.ts         # Your name, bio, email, GitHub, LinkedIn, CV path
+src/data/projects.ts        # Academic projects
+src/data/internshipProjects.ts  # Internship projects
+src/data/skills.ts          # Technical skills
+src/data/experience.ts      # Work experience
+src/data/education.ts       # Education history
+src/data/volunteer.ts       # Volunteer work
+src/data/languages.ts       # Languages & proficiency
+src/data/contact.ts         # Contact details
 ```
 
-أو في Windows PowerShell (جلسة محلية):
+No UI changes needed — just save the file and the portfolio updates automatically.
 
-```powershell
-$env:ADMIN_TOKEN = "your-secret-token-here"
+---
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your repository to GitHub
+2. Go to [vercel.com](https://vercel.com) and import the repository
+3. Click **Deploy** — no extra configuration needed
+
+### Netlify
+
+```bash
+npm run build
+# Upload the `.next` folder or connect your GitHub repo on netlify.com
 ```
 
-على استضافة مثل Vercel: أضيفي متغير بيئة `ADMIN_TOKEN` من صفحة Environment Variables في إعدادات المشروع.
+### GitHub Pages (Static Export)
 
-ملاحظة أمنيّة: الحل الحالي هو حماية بسيطة مناسبة للنسخ التجريبية؛ في الإنتاج أنصح باستخدام نظام مصادقة أقوى (NextAuth، OAuth، أو JWT مع HttpOnly cookies) بدلاً من توكن ثابت مخزن في localStorage.
+Add to `next.config.js`:
+```js
+output: 'export'
+```
 
-بعد تغيير المتغير، أعد تشغيل الخادم حتى يبدأ استخدام القيمة الجديدة.
+Then run:
+```bash
+npm run build
+# Deploy the `out/` folder
+```
 
+---
+
+## Available Scripts
+
+```bash
+npm run dev       # Start development server (http://localhost:3000)
+npm run build     # Build for production
+npm run start     # Start production server
+npm run lint      # Run ESLint
+```
+
+---
+
+## Adding Your CV
+
+Place your CV PDF at:
+```
+public/assets/files/cv.pdf
+```
+
+The download button in the header links to this path automatically.
+
+---
+
+## Contact
+
+**Rola Alsulami**
+- Email: rolwalsulami@gmail.com
+- GitHub: [rolw4-53872](https://github.com/rolw4-53872)
+- LinkedIn: [rola-alsulami](https://linkedin.com/in/rola-alsulami)
+- Location: Makkah, Saudi Arabia
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

@@ -1,9 +1,10 @@
 [
   {
-    "company": "Dama Holding Company",
     "position": "Data Science Intern",
+    "company": "Dama Holding Company",
     "from": "February 2026",
     "to": "Present",
-    "description": "Worked on real-world data analytics and business intelligence projects."
+    "description": "Working on real-world data analytics, business intelligence, and machine learning projects. Responsibilities include building executive dashboards in Power BI, designing and developing relational databases, performing data analysis using Python and SQL, and contributing to an intelligent recommendation system.",
+    "skills": ["Data Analysis", "Power BI", "SQL", "Dashboard Development", "Business Intelligence", "Database Design", "Machine Learning"]
   }
 ]

@@ -1,26 +1,38 @@
 [
   {
     "title": "Saudi Arabia Domestic Tourism Analysis & Visualization (2018–2023)",
-    "description": "Comprehensive analysis and visualization of Saudi Arabia's domestic tourism using Python and interactive visualizations.",
-    "technologies": ["Python","Pandas","Plotly","Matplotlib","Seaborn","Folium","Google Colab"],
+    "description": "A comprehensive data analytics project examining domestic tourism trends across Saudi Arabia from 2018 to 2023. Includes geographic mapping, trend analysis, and interactive visualizations that reveal regional patterns and seasonal behavior across the kingdom.",
+    "longDescription": "This project involved end-to-end data analysis of Saudi domestic tourism, including data collection, cleaning, EDA, and multi-layer visual storytelling. Geographic maps built with Folium highlight regional hotspots, while Plotly dashboards make the trends interactive and accessible.",
+    "technologies": ["Python", "Pandas", "Plotly", "Matplotlib", "Seaborn", "Folium", "Google Colab"],
+    "challenges": "Handling missing and inconsistent regional data, normalizing multi-year datasets, and designing visualizations that communicate clearly to non-technical audiences.",
+    "results": "Produced a polished, publication-ready analytics report with interactive geographic maps and trend charts that highlight key tourism patterns across all regions.",
     "github": "",
     "type": "academic",
-    "image": ""
+    "image": "",
+    "year": "2024"
   },
   {
-    "title": "Flower Recognition Using Deep Learning",
-    "description": "Compared Transfer Learning with ResNet-18 against custom CNN architectures for flower recognition. Best accuracy 93.76%.",
-    "technologies": ["PyTorch","Torchvision","CNN","ResNet-18","Scikit-learn"],
+    "title": "Flower Recognition Using Deep Learning (ResNet-18 vs Custom CNN)",
+    "description": "A deep learning study comparing the performance of a pre-trained ResNet-18 model with Transfer Learning against a custom-built CNN architecture for flower species classification. Achieved a best test accuracy of 93.76% with the transfer learning approach.",
+    "longDescription": "Built two complete deep learning pipelines in PyTorch — one from scratch and one leveraging ResNet-18 with transfer learning. Evaluated both architectures using classification metrics, confusion matrices, and learning curves to draw conclusions about the effectiveness of transfer learning in limited-data scenarios.",
+    "technologies": ["PyTorch", "Torchvision", "CNN", "ResNet-18", "Transfer Learning", "Scikit-learn", "Matplotlib"],
+    "challenges": "Limited dataset size required careful data augmentation and regularization strategies to prevent overfitting on the custom CNN.",
+    "results": "ResNet-18 with Transfer Learning achieved 93.76% test accuracy, significantly outperforming the custom CNN (78.4%), confirming the value of pre-trained features for computer vision tasks.",
     "github": "",
     "type": "academic",
-    "image": ""
+    "image": "",
+    "year": "2024"
   },
   {
     "title": "Predicting Student Academic Performance Using Machine Learning",
-    "description": "End-to-end ML project using regression, classification, clustering, and anomaly detection.",
-    "technologies": ["Python","Pandas","Scikit-learn","Matplotlib","Seaborn"],
+    "description": "An end-to-end machine learning project that predicts student academic outcomes using multiple techniques including regression, classification, clustering, and anomaly detection. Explores the relationships between behavioral, demographic, and academic factors.",
+    "longDescription": "Full ML pipeline from raw data to deployable model: EDA, feature engineering, baseline models, hyperparameter tuning, and model comparison. Applied K-Means clustering to group students by performance profiles and isolation forest for anomaly detection.",
+    "technologies": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "NumPy"],
+    "challenges": "Feature selection from a high-dimensional dataset, handling class imbalance in classification tasks, and interpreting model outputs in a meaningful educational context.",
+    "results": "Achieved strong predictive accuracy across models with the Random Forest classifier outperforming baselines. Clustering revealed 3 distinct student performance profiles with actionable insights.",
     "github": "",
     "type": "academic",
-    "image": ""
+    "image": "",
+    "year": "2025"
   }
 ]

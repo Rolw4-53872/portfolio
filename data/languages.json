@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Arabic",
+    "nameAr": "العربية",
+    "level": "Native",
+    "levelAr": "اللغة الأم",
+    "proficiency": 100
+  },
+  {
+    "name": "English",
+    "nameAr": "الإنجليزية",
+    "level": "Professional Working Proficiency",
+    "levelAr": "كفاءة مهنية",
+    "proficiency": 80
+  },
+  {
+    "name": "Spanish",
+    "nameAr": "الإسبانية",
+    "level": "Basic",
+    "levelAr": "مستوى أساسي",
+    "proficiency": 25
+  }
+]

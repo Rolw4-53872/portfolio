@@ -4,6 +4,7 @@
     "degree": "Bachelor of Data Science",
     "from": "2023",
     "to": "2027",
-    "description": "Currently pursuing Bachelor of Data Science."
+    "description": "Pursuing a Bachelor's degree in Data Science with a focus on machine learning, artificial intelligence, statistical analysis, and data engineering. Developing strong foundations in Python, SQL, deep learning, and business intelligence through rigorous coursework and applied academic projects.",
+    "coursework": ["Data Science", "Machine Learning", "Deep Learning", "Artificial Intelligence", "Database Systems", "Statistics", "Data Visualization"]
   }
 ]

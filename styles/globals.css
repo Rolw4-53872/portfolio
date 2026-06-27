@@ -2,47 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #__next {
   height: 100%;
 }
 
 body {
-  @apply bg-white text-gray-800 antialiased;
+  @apply bg-slate-50 text-slate-800 antialiased;
 }
 
-/* Glassmorphism helpers */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: #0f172a;
+}
+
 .glass {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .dark .glass {
-  background: rgba(16,24,40,0.4);
+  background: rgba(15, 23, 42, 0.7);
 }
 
-/* Hero background (use a high-quality banner image at /assets/images/banner.jpg) */
-.hero-bg {
-  background-image: url('/assets/images/banner.jpg');
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+.glass-soft {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-.hero-overlay {
-  background: linear-gradient(90deg, rgba(2,6,23,0.6) 0%, rgba(2,6,23,0.25) 60%, rgba(255,255,255,0.03) 100%);
-  position: absolute;
-  inset: 0;
+.hero-title {
+  font-size: 2.25rem;
+  line-height: 1;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 10;
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.25rem;
+  }
 }
-
-/* Headline sizing */
-.hero-title { font-size: 2.25rem; line-height: 1; }
-@media (min-width: 768px) { .hero-title { font-size: 3.25rem; } }
-
-.glass-soft { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 

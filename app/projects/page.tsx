@@ -13,7 +13,10 @@ export default async function ProjectsPage() {
   const projects = await loadProjects()
   return (
     <main className="container mx-auto px-6 py-12">
-      <h2 className="text-3xl font-bold">Projects</h2>
+      <section className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/70">
+        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-600">Projects</p>
+        <h2 className="mt-3 text-3xl font-bold text-slate-900">Curated case studies that reflect technical depth and business value.</h2>
+      </section>
       <ProjectsListClient initial={projects} />
     </main>
   )
